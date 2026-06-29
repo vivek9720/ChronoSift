@@ -1,0 +1,2 @@
+192.168.1.10 - alice [12/Dec/2023:08:30:01 +0000] "GET /index.html?lang=en HTTP/1.1" 200 5123 "http://example.com/" "Mozilla/5.0 (X11; Linux x86_64) curl/7.68.0"
+203.0.113.9 - - [12/Dec/2023:08:30:02 +0000] "GET /../../etc/passwd HTTP/1.1" 404 491 "-" "sqlmap/1.5"

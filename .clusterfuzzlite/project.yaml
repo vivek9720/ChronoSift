@@ -1,0 +1,13 @@
+language: c++
+primary_contact: ""
+sanitizers:
+  - address
+  - undefined
+architectures:
+  - x86_64
+fuzz_targets:
+  - syslog_fuzzer
+  - weblog_fuzzer
+  - jsonlog_fuzzer
+  - winlog_fuzzer
+  - cef_fuzzer

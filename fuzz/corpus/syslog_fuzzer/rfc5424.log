@@ -1,0 +1,2 @@
+<165>1 2024-03-09T22:14:15.003Z host.example.com evntslog 1024 ID47 [exampleSDID@32473 iut="3" eventSource="App" eventID="1011"] An application event log entry
+<34>1 2024-03-09T22:14:16Z host.example.com sshd 9921 - - Failed password for invalid user admin from 203.0.113.7 port 55214

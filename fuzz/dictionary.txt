@@ -1,0 +1,126 @@
+# ChronoSift fuzzing dictionary.
+# Real tokens that appear in the log/event formats the harnesses parse. Giving
+# the fuzzer these literals helps it cross the structural gates (magics, field
+# keywords, separators) quickly so it reaches deep parsing logic.
+
+# --- EVTX binary container magics / markers ---
+evtx_file_magic="ElfFile\x00"
+evtx_chunk_magic="ElfChnk\x00"
+evtx_record_magic="\x2a\x2a\x00\x00"
+
+# --- BinXML token bytes ---
+binxml_fragment="\x0f\x01\x01\x00"
+binxml_open_elem="\x01"
+binxml_close_start="\x02"
+binxml_close_empty="\x03"
+binxml_end_elem="\x04"
+binxml_value="\x05"
+binxml_attribute="\x06"
+binxml_template="\x0c"
+binxml_norm_subst="\x0d"
+binxml_opt_subst="\x0e"
+binxml_eos="\x00"
+binxml_value_string="\x01"
+binxml_value_filetime="\x11"
+
+# --- Syslog ---
+syslog_pri_open="<"
+syslog_pri_close=">"
+syslog_pri_kern="<0>"
+syslog_pri_auth="<38>"
+syslog_pri_local="<134>"
+syslog_v5424="<34>1 "
+syslog_nil="-"
+syslog_sd_open="["
+syslog_sd_close="]"
+syslog_sd_kv=" iut=\"3\""
+syslog_bom="\xef\xbb\xbf"
+
+# --- Syslog month tokens ---
+mon_jan="Jan"
+mon_feb="Feb"
+mon_mar="Mar"
+mon_oct="Oct"
+mon_dec="Dec"
+
+# --- Common security log phrases (drive detection paths) ---
+ssh_failed="Failed password for "
+ssh_invalid="Invalid user "
+ssh_accepted="Accepted password for "
+pam_failure="authentication failure"
+session_opened="session opened for user "
+sudo="sudo: "
+sshd="sshd[1234]: "
+
+# --- HTTP / web access log ---
+http_get="GET "
+http_post="POST "
+http_head="HEAD "
+http_put="PUT "
+http_delete="DELETE "
+http_ver="HTTP/1.1"
+http_ver10="HTTP/1.0"
+http_200=" 200 "
+http_404=" 404 "
+http_403=" 403 "
+http_500=" 500 "
+clf_dash="- - "
+clf_time="[10/Oct/2000:13:55:36 -0700]"
+ua_curl="\"curl/7.68.0\""
+referer="\"http://example.com/\""
+
+# --- JSON log ---
+json_obj_open="{"
+json_obj_close="}"
+json_arr_open="["
+json_arr_close="]"
+json_ts="\"timestamp\":"
+json_ts2="\"@timestamp\":"
+json_level="\"level\":"
+json_msg="\"message\":"
+json_host="\"host\":"
+json_user="\"user\":"
+json_src="\"src_ip\":"
+json_true="true"
+json_false="false"
+json_null="null"
+json_iso="\"2024-03-09T11:22:33.456Z\""
+json_unicode="\\u0041"
+
+# --- severity words ---
+lvl_emerg="emergency"
+lvl_alert="alert"
+lvl_crit="critical"
+lvl_err="error"
+lvl_warn="warning"
+lvl_notice="notice"
+lvl_info="info"
+lvl_debug="debug"
+
+# --- CEF (Common Event Format) ---
+cef_marker="CEF:"
+cef_v0="CEF:0|"
+cef_pipe="|"
+cef_esc_pipe="\\|"
+cef_esc_eq="\\="
+cef_kv_src="src="
+cef_kv_dst="dst="
+cef_kv_spt="spt="
+cef_kv_dpt="dpt="
+cef_kv_suser="suser="
+cef_kv_duser="duser="
+cef_kv_act="act="
+cef_kv_rt="rt="
+cef_kv_proto="proto="
+
+# --- Windows event field leaf names ---
+win_eventid="EventID"
+win_level="Level"
+win_provider="Provider"
+win_channel="Channel"
+win_computer="Computer"
+win_security="Security"
+win_system="System"
+win_timecreated="TimeCreated"
+win_4624="4624"
+win_4625="4625"

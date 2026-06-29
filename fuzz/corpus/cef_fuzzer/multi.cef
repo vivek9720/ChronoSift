@@ -1,0 +1,3 @@
+CEF:0|Imperva|SecureSphere|12|4001|SQL Injection|9|src=198.51.100.23 dst=10.0.0.50 dpt=1433 request=/login.jsp app=https
+CEF:0|Snort|IDS|2.9|1:2001219|ET SCAN Potential SSH Scan|6|src=203.0.113.99 dst=10.0.0.1 dpt=22 proto=TCP
+CEF:0|PaloAlto|PAN-OS|10.1|threat|spyware detected|8|src=10.0.0.7 dst=8.8.8.8 spt=49555 dpt=53 act=alert

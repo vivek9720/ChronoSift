@@ -1,0 +1,2 @@
+CEF:0|Security|threatmanager|1.0|100|worm successfully stopped|10|src=10.0.0.1 dst=2.1.2.2 spt=1232 dpt=443 act=blocked
+<134>Jan 18 11:07:53 host CEF:0|Cisco|ASA|9.2|106023|Deny protocol|5|src=192.168.1.5 dst=10.0.0.9 spt=51000 dpt=22 proto=TCP act=Deny

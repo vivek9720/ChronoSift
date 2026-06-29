@@ -1,0 +1,5 @@
+CEF:not_a_version|only|three|pipes
+CEF:0|a|b|c|d|e|f
+CEF:
+just text with CEF: in the middle and no structure
+CEF:0|v|p|ver|sig|name|5|key= =value broken= \

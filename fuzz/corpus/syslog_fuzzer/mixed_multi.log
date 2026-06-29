@@ -1,0 +1,3 @@
+<0>Jan  1 00:00:00 host kernel: Out of memory: Kill process 1234
+<134>1 2024-01-01T00:00:00.123456+02:00 fw01 nftables - - drop in=eth0 src=10.0.0.5
+<86>Mar 09 12:00:00 host sudo[200]: pam_unix(sudo:session): session opened for user root

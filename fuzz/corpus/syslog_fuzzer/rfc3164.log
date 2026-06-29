@@ -1,0 +1,2 @@
+<34>Oct 11 22:14:15 mymachine su[1234]: 'su root' failed for lonvick on /dev/pts/8
+<13>Mar  9 11:22:33 web01 cron[4521]: (root) CMD (/usr/bin/backup.sh)

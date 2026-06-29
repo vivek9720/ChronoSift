@@ -1,0 +1,2 @@
+CEF:0|McAfee|ePO|5.10|18000|Failed login attempt|7|suser=admin src=203.0.113.7 cs1Label=Reason cs1=BadPassword rt=1709983353000
+CEF:0|Microsoft|Windows|10|4625|An account failed to log on|8|duser=Administrator src=10.0.0.5 dvchost=DC01
